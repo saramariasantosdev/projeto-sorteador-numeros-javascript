@@ -27,7 +27,7 @@ function obterNumeroAleatorio(min, max) {
 }
 
 function alterarStatusBotao() {
-    let botao = document.getElementById('btn-reiniciar')
+    let botao = document.getElementById('btn-reiniciar');
     if (botao.classList.contains('container__botao-desabilitado')) {
         botao.classList.remove('container__botao-desabilitado');
         botao.classList.add('container__botao-ativo');
@@ -37,11 +37,14 @@ function alterarStatusBotao() {
     }
 }
 function reiniciar() {
-    let quantidade = document.querySelector('#quantidade').value = '';
-    let de = document.querySelector('#de').value = '';
-    let ate = document.querySelector('#ate').value = '';
+    let botao = document.getElementById('btn-reiniciar');
+    if (botao.classList.contains('container__botao-ativo')) {
+        let quantidade = document.querySelector('#quantidade').value = '';
+        let de = document.querySelector('#de').value = '';
+        let ate = document.querySelector('#ate').value = '';
 
-    document.querySelector('#resultado').innerHTML = `<label class="texto__paragrafo">Números sorteados: nenhum até agora</label>`;
+        document.querySelector('#resultado').innerHTML = `<label class="texto__paragrafo">Números sorteados: nenhum até agora</label>`;
 
-    alterarStatusBotao();
+        alterarStatusBotao();
+    }
 }
