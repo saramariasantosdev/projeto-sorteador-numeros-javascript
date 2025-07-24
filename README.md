@@ -6,3 +6,6 @@ Este projeto foi feito durante a formação "A partir do zero: iniciante em prog
 
 ## Confira o resultado e se divirta 😊
 https://saramariasantosdev.github.io/projeto-sorteador-numeros-javascript/
+
+## Licença
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
